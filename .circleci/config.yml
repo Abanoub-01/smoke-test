@@ -9,12 +9,12 @@ jobs:
            - run:
                name: smoke test
                command: |
-                 URL="https://blog.udacityyy.com/"
+                 URL="https://blog.udacity.com/"
                  if curl -s --head ${URL} 
                  then
-                   return 0
+                   echo "Fetched!!" 
                  else
-                   return 1
+                   echo "not fetched..."
                  fi
              
 workflows:
