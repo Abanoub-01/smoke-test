@@ -19,4 +19,5 @@ jobs:
              
 workflows:
     test-flow:
-        - smoke_test
+        jobs:
+            - smoke_test
